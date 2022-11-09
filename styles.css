@@ -1,0 +1,451 @@
+body{
+    margin: 0;
+}
+
+/* navigation */
+body nav{
+    position: fixed;
+    width: 85%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1vh 8vw;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+#logo{
+    width: 125px;
+    cursor: pointer;
+}
+#navigation {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #fdc93b;
+    transition: 0.3s ease;
+}
+
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url(images/school.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+#home h2{
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 2.73rem;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-top: 12px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 8px;
+
+}
+.btn{
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.blue{
+    color:#fff;
+    background: rgb(21, 21, 100);
+}
+.blue:hover{
+    background: #fff;
+    color: rgb(21, 21, 100);
+    transition: 0.4s ease;
+}
+.yellow{
+    color: #fff;
+    background: #fdc93b;
+}
+.yellow:hover{
+    color: #fdc93b;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+/* Accolades */
+#accolades{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#edu-inst{
+    background: rgb(162, 162, 220);
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+.acco-inst{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+.inst-name{
+    background: #efeff8;
+    text-align: center;
+    padding: 20px 12px 0px 12px ;
+} 
+.inst-name i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+.inst-name h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+.inst-name p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+
+/* About Schools */
+#about-school{
+    text-align: center;
+    padding: 8vw 8vw 0 8vw;
+    margin-bottom: 0;
+}
+#about-school h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#about-school .school-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#about-school .school-box .schools{
+    text-align: start;
+    background: #efeff8;
+    height: 60%;
+    position: relative;
+}
+#about-school .school-box .schools img{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-school .school-box .schools .details{
+    padding: 15px 15px 0 15px;
+    margin-bottom: 0;
+}
+#about-school .school-box .schools .open-years{
+    background-color: #52529d;
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 8px;
+    top: 42%;
+    bottom: 100px;
+    font-weight: bold;
+}
+#about-school .school-box .schools .open-years:hover{
+    background-color: #efeff8;
+    color: rgb(3, 3, 85);
+    font-weight: bold;
+    transition: 0.35s ease;
+}
+
+#about-school .school-box .schools .details i{
+    color: #fdc93b;
+    font-size: .9rem;
+}
+
+/* registration */
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,.5), rgba(81,91,233,.5)), url(images/signup.jpg);
+    height: 100%;
+    width: 84vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#registration .vacation-batch{
+    color: #FFF;
+}
+#registration .vacation-batch h1{
+    color: #FFF;
+    font-size: 2rem;
+}
+#registration .vacation-batch .time{
+    display: flex;
+    margin-top: 40px;
+}
+#registration .vacation-batch .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#registration .form{
+    background: #FFF;
+    width: 30vw;
+    height: 50%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    text-align: center;
+}
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84,40,241);
+    outline: none;
+}
+#registration .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form .btn{
+    text-align: start;
+    margin-top: 12px;    
+}
+#registration .form .btn .yellow{
+    color: #fff;
+    background: #fdc93b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 8px;
+
+}
+#registration .form .btn .yellow:hover{
+    color: #fdc93b;
+    background: rgb(88, 84, 205);
+    transition: 0.4s ease;
+}
+
+
+/* profile */
+#faculty{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    margin-top: 10px;
+}
+#faculty .founder-box img{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    background: rgba(210, 220, 370, 0.7);
+}
+#faculty .founder-box{
+    display: flex;
+    background: #efeff8;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+} 
+#faculty .founder-box .founder-detail{
+    color: #0a0a51;
+    font-size: 1.3rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    padding: 30px 20px 0 20px;
+}
+#faculty .founder-box .founder-detail h1{
+    text-align: center;
+    color: #a07e7e;
+}
+#faculty .founder-box .founder-detail p{
+    text-align: center;
+    color:#4c4c67;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.8rem;
+}
+#faculty .founder-box .founder-detail .founder-detail-sub{
+    text-align: end;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+#faculty .founder-box .founder-detail .founder-detail-sub h2{
+    padding-right: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+#faculty .founder-box .founder-detail .founder-detail-sub h3{
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#faculty .founder-box .founder-detail .founder-detail-sub .pro-links{
+    padding-right: 30px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+#faculty .founder-box .founder-detail .founder-detail-sub .pro-links i{
+    border: 1px solid;
+    padding: 10px 10px;
+}
+#faculty .founder-box .founder-detail .founder-detail-sub .pro-links i:hover{
+    background: #7d7dbe;
+    transition: 0.3s ease;
+    color: #efeff8;
+}
+#faculty .faculty-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    
+}
+#faculty .faculty-box .profile{
+    background: #fafaf1;
+    padding: 30px 20px;
+}
+#faculty .faculty-box img{
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+}
+#faculty .faculty-box .profile .pro-links{
+    margin-top: 10px;
+}
+#faculty .faculty-box .profile .pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21,21,100);
+    cursor:pointer;
+}
+#faculty .faculty-box .profile .pro-links i:hover{
+    background: #2a2465;
+    color: #FFF;
+    transition: 0.3s ease;
+}
+
+
+/* footer */
+footer{
+    padding: 8vw 8vw 2vw 8vw;
+    background: #101c32;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    list-style: none;
+}
+footer .column{
+    padding-bottom: 40px;
+}
+footer .column h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer .column li{
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+footer .column li:hover{
+    color: rgb(241,240,245);
+    transition: 0.3s ease;
+}
+footer .column1{
+    padding-bottom: 40px;
+}
+footer .column1 h3{
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+footer .column1 li{
+    color:#c6c8c9;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+footer .copyright{
+    color: #efeff8;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+footer .pro-links{
+    margin-top: 0px;
+}
+footer .pro-links i{
+    background-color: #c4cbd1;
+    color: #2d2b2b;
+    padding: 10px 13px;
+    border: 1px solid rgb(21,21,100);
+    border-radius: 3px;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+footer .pro-links i:hover{
+    background: #216485;
+    color: #ededed;
+}
